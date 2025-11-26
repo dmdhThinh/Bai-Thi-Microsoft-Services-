@@ -1,0 +1,409 @@
+2025-11-26T14:01:45.019Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/account-service-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-11-26T14:01:45.137Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T14:01:47.099Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:01:47.114Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:01:47.127Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@2fb68ec6 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:01:47.129Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:01:47.137Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:01:47.144Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@46292372 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:01:47.173Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:01:47.194Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:01:47.216Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@126be319 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:02:28.866Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T14:02:36.362Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6011 ms. Found 1 JPA repository interface.
+2025-11-26T14:02:42.797Z  INFO 1 --- [account-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ea743e3-81c9-339c-8d01-d44d336a40cb
+2025-11-26T14:03:07.716Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-26T14:03:09.010Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-26T14:03:09.032Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-26T14:03:11.469Z  INFO 1 --- [account-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-26T14:03:11.517Z  INFO 1 --- [account-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 84100 ms
+2025-11-26T14:03:32.536Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-26T14:03:38.537Z  INFO 1 --- [account-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26T14:03:40.423Z  INFO 1 --- [account-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-26T14:03:41.278Z  INFO 1 --- [account-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-26T14:03:48.617Z  INFO 1 --- [account-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T14:03:49.373Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-26T14:03:50.485Z  WARN 1 --- [account-service] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-11-26T14:03:50.492Z ERROR 1 --- [account-service] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-11-26T14:03:50.502Z  WARN 1 --- [account-service] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar!/:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar!/:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at vti.dtn.account_service.AccountServiceApplication.main(AccountServiceApplication.java:12) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:839) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:415) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97) ~[HikariCP-6.3.3.jar!/:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.3.jar!/:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	... 40 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:963) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:827) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.4.0.jar!/:9.4.0]
+	... 56 common frames omitted
+
+2025-11-26T14:03:50.819Z ERROR 1 --- [account-service] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-11-26T14:03:50.853Z  WARN 1 --- [account-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2025-11-26T14:03:51.098Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-11-26T14:03:51.630Z  INFO 1 --- [account-service] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-26T14:03:52.182Z ERROR 1 --- [account-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.11.jar!/:6.2.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.11.jar!/:6.2.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.6.jar!/:3.5.6]
+	at vti.dtn.account_service.AccountServiceApplication.main(AccountServiceApplication.java:12) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[account-service-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.11.jar!/:6.2.11]
+	... 20 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:410) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.29.Final.jar!/:6.6.29.Final]
+	... 35 common frames omitted
+
+2025-11-26T14:08:02.156Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/account-service-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-11-26T14:08:02.167Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T14:08:02.528Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:08:02.531Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=account-service, profiles=[default], label=null, version=3c6cf04c80ceb24f874993d94b9653ede4b38336, state=
+2025-11-26T14:08:14.209Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T14:08:15.527Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1214 ms. Found 1 JPA repository interface.
+2025-11-26T14:08:17.063Z  INFO 1 --- [account-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ea743e3-81c9-339c-8d01-d44d336a40cb
+2025-11-26T14:08:19.516Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-26T14:08:19.629Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-26T14:08:19.633Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-26T14:08:19.733Z  INFO 1 --- [account-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-26T14:08:19.738Z  INFO 1 --- [account-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17195 ms
+2025-11-26T14:08:21.658Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-26T14:08:22.866Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c826498
+2025-11-26T14:08:22.876Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-26T14:08:23.048Z  INFO 1 --- [account-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26T14:08:23.439Z  INFO 1 --- [account-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-26T14:08:23.565Z  INFO 1 --- [account-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-26T14:08:25.016Z  INFO 1 --- [account-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T14:08:25.673Z  INFO 1 --- [account-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.30
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-26T14:08:28.244Z  INFO 1 --- [account-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26T14:08:28.252Z  INFO 1 --- [account-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T14:08:29.134Z  WARN 1 --- [account-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26T14:08:30.962Z  INFO 1 --- [account-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-26T14:08:31.093Z  WARN 1 --- [account-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-26T14:08:31.117Z  INFO 1 --- [account-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T14:08:31.280Z  INFO 1 --- [account-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-26T14:08:31.342Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-26T14:08:31.352Z  INFO 1 --- [account-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:08:31.376Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-26T14:08:31.378Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-26T14:08:31.379Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-26T14:08:31.380Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-26T14:08:31.381Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-26T14:08:31.382Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-26T14:08:31.383Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-26T14:08:32.334Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-26T14:08:32.340Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-26T14:08:32.346Z  INFO 1 --- [account-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-26T14:08:32.350Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1764166112350 with initial instances count: 4
+2025-11-26T14:08:32.359Z  INFO 1 --- [account-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT-SERVICE with eureka with status UP
+2025-11-26T14:08:32.362Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764166112362, current=UP, previous=STARTING]
+2025-11-26T14:08:32.368Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/5bec3e251720:account-service:8081: registering service...
+2025-11-26T14:08:32.432Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-11-26T14:08:32.436Z  INFO 1 --- [account-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-11-26T14:08:32.464Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Started AccountServiceApplication in 64.904 seconds (process running for 74.167)
+2025-11-26T14:08:32.544Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/5bec3e251720:account-service:8081 - registration status: 204
+2025-11-26T14:08:33.518Z  INFO 1 --- [account-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26T14:08:33.521Z  INFO 1 --- [account-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-26T14:08:33.534Z  INFO 1 --- [account-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-11-26T14:10:55.966Z  INFO 1 --- [account-service] [http-nio-8081-exec-8] v.d.a.controller.AccountController       : Fetching list of accounts
+2025-11-26T14:10:56.056Z  INFO 1 --- [account-service] [http-nio-8081-exec-8] v.d.a.services.impl.AccountServiceImpl   : Retrieving all accounts from the database
+2025-11-26T14:12:59.927Z  INFO 1 --- [account-service] [http-nio-8081-exec-3] v.d.a.controller.AccountController       : Fetching list of accounts
+2025-11-26T14:12:59.991Z  INFO 1 --- [account-service] [http-nio-8081-exec-3] v.d.a.services.impl.AccountServiceImpl   : Retrieving all accounts from the database
+2025-11-26T14:13:31.271Z  INFO 1 --- [account-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:18:31.816Z  INFO 1 --- [account-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:21:44.307Z  INFO 1 --- [account-service] [http-nio-8081-exec-5] v.d.a.controller.AccountController       : Fetching list of accounts
+2025-11-26T14:21:44.423Z  INFO 1 --- [account-service] [http-nio-8081-exec-5] v.d.a.services.impl.AccountServiceImpl   : Retrieving all accounts from the database
+2025-11-26T14:23:31.831Z  INFO 1 --- [account-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:28:04.853Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+2025-11-26T14:28:04.983Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764167284983, current=DOWN, previous=UP]
+2025-11-26T14:28:04.992Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/5bec3e251720:account-service:8081: registering service...
+2025-11-26T14:28:05.743Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/5bec3e251720:account-service:8081 - registration status: 204
+2025-11-26T14:28:06.101Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T14:28:06.694Z  INFO 1 --- [account-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-26T14:34:10.601Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/account-service-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-11-26T14:34:10.674Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T14:34:12.413Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:34:12.429Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:34:12.468Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@2fb68ec6 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:34:12.596Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:34:12.600Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:34:12.614Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@46292372 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:34:12.618Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:34:12.620Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused. Will be trying the next url if available
+2025-11-26T14:34:12.624Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@126be319 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": Connection refused
+2025-11-26T14:34:53.847Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T14:34:58.483Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4069 ms. Found 1 JPA repository interface.
+2025-11-26T14:35:09.085Z  INFO 1 --- [account-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ea743e3-81c9-339c-8d01-d44d336a40cb
+2025-11-26T14:37:13.423Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/account-service-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-11-26T14:37:13.440Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T14:37:13.825Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:37:13.828Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": config-service. Will be trying the next url if available
+2025-11-26T14:37:13.830Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@6e5bfdfc uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": config-service
+2025-11-26T14:37:13.832Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:37:13.833Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": config-service. Will be trying the next url if available
+2025-11-26T14:37:13.835Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@3b718392 uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": config-service
+2025-11-26T14:37:13.838Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:37:13.839Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://config-service:8763:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://config-service:8763/account-service/default": config-service. Will be trying the next url if available
+2025-11-26T14:37:13.842Z  WARN 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@6d2260db uris = array<String>['http://config-service:8763'], optional = true, profiles = 'default']): I/O error on GET request for "http://config-service:8763/account-service/default": config-service
+2025-11-26T14:37:18.502Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T14:37:19.328Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 744 ms. Found 1 JPA repository interface.
+2025-11-26T14:37:20.086Z  INFO 1 --- [account-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ea743e3-81c9-339c-8d01-d44d336a40cb
+2025-11-26T14:37:22.194Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-26T14:37:22.265Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-26T14:37:22.268Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-26T14:37:22.444Z  INFO 1 --- [account-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-26T14:37:22.447Z  INFO 1 --- [account-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8590 ms
+2025-11-26T14:37:24.080Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-26T14:37:24.922Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1868ed54
+2025-11-26T14:37:24.929Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-26T14:37:25.111Z  INFO 1 --- [account-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26T14:37:25.392Z  INFO 1 --- [account-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-26T14:37:25.578Z  INFO 1 --- [account-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-26T14:37:26.926Z  INFO 1 --- [account-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T14:37:27.309Z  INFO 1 --- [account-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.30
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-26T14:37:34.149Z  INFO 1 --- [account-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26T14:37:34.206Z  INFO 1 --- [account-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T14:37:37.339Z  WARN 1 --- [account-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26T14:37:41.182Z  INFO 1 --- [account-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-26T14:37:41.563Z  WARN 1 --- [account-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-26T14:37:41.623Z  INFO 1 --- [account-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T14:37:42.047Z  INFO 1 --- [account-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-26T14:37:42.227Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-26T14:37:42.247Z  INFO 1 --- [account-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:37:42.317Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-26T14:37:42.321Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-26T14:37:42.326Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-26T14:37:42.340Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-26T14:37:42.345Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-26T14:37:42.351Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-26T14:37:42.354Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-26T14:37:44.100Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-26T14:37:44.110Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-26T14:37:44.121Z  INFO 1 --- [account-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-26T14:37:44.133Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1764167864129 with initial instances count: 0
+2025-11-26T14:37:44.151Z  INFO 1 --- [account-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT-SERVICE with eureka with status UP
+2025-11-26T14:37:44.155Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764167864155, current=UP, previous=STARTING]
+2025-11-26T14:37:44.163Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/49bc5f1dfbde:account-service:8081: registering service...
+2025-11-26T14:37:44.282Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-11-26T14:37:44.292Z  INFO 1 --- [account-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-11-26T14:37:44.373Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Started AccountServiceApplication in 42.911 seconds (process running for 48.684)
+2025-11-26T14:37:44.438Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/49bc5f1dfbde:account-service:8081 - registration status: 204
+2025-11-26T14:38:14.082Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-26T14:38:14.084Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-26T14:38:14.085Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-26T14:38:14.087Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-26T14:38:14.089Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-26T14:38:14.090Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-11-26T14:38:14.091Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-26T14:38:14.176Z  INFO 1 --- [account-service] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-26T14:39:47.420Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+2025-11-26T14:39:47.455Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764167987455, current=DOWN, previous=UP]
+2025-11-26T14:39:47.460Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/49bc5f1dfbde:account-service:8081: registering service...
+2025-11-26T14:39:47.547Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/49bc5f1dfbde:account-service:8081 - registration status: 204
+2025-11-26T14:39:47.681Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T14:39:47.787Z  INFO 1 --- [account-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-11-26T14:39:47.965Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T14:39:48.073Z  INFO 1 --- [account-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-11-26T14:42:29.851Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 1 (/app/account-service-0.0.1-SNAPSHOT.jar started by root in /app)
+2025-11-26T14:42:29.885Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T14:42:30.811Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://config-service:8763
+2025-11-26T14:42:30.817Z  INFO 1 --- [account-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=account-service, profiles=[default], label=null, version=3c6cf04c80ceb24f874993d94b9653ede4b38336, state=
+2025-11-26T14:42:40.973Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T14:42:42.140Z  INFO 1 --- [account-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1116 ms. Found 1 JPA repository interface.
+2025-11-26T14:42:43.990Z  INFO 1 --- [account-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ea743e3-81c9-339c-8d01-d44d336a40cb
+2025-11-26T14:42:46.763Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-11-26T14:42:46.856Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-26T14:42:46.859Z  INFO 1 --- [account-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-11-26T14:42:47.246Z  INFO 1 --- [account-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-26T14:42:47.252Z  INFO 1 --- [account-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16401 ms
+2025-11-26T14:42:51.354Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-26T14:42:54.379Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2633d09c
+2025-11-26T14:42:54.428Z  INFO 1 --- [account-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-11-26T14:42:55.539Z  INFO 1 --- [account-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26T14:42:58.198Z  INFO 1 --- [account-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-11-26T14:42:58.711Z  INFO 1 --- [account-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-11-26T14:43:02.557Z  INFO 1 --- [account-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T14:43:02.881Z  INFO 1 --- [account-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.30
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-26T14:43:07.382Z  INFO 1 --- [account-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26T14:43:07.404Z  INFO 1 --- [account-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T14:43:08.334Z  WARN 1 --- [account-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26T14:43:10.273Z  INFO 1 --- [account-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-11-26T14:43:10.499Z  WARN 1 --- [account-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-26T14:43:10.540Z  INFO 1 --- [account-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T14:43:10.810Z  INFO 1 --- [account-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-11-26T14:43:11.076Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-11-26T14:43:11.119Z  INFO 1 --- [account-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-11-26T14:43:11.181Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-11-26T14:43:11.183Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-11-26T14:43:11.185Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-11-26T14:43:11.187Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-11-26T14:43:11.190Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-11-26T14:43:11.192Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-11-26T14:43:11.194Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-11-26T14:43:16.444Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-11-26T14:43:16.460Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-11-26T14:43:16.476Z  INFO 1 --- [account-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-26T14:43:16.486Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1764168196483 with initial instances count: 4
+2025-11-26T14:43:16.505Z  INFO 1 --- [account-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ACCOUNT-SERVICE with eureka with status UP
+2025-11-26T14:43:16.509Z  INFO 1 --- [account-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1764168196509, current=UP, previous=STARTING]
+2025-11-26T14:43:16.514Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/3c88d2b34e74:account-service:8081: registering service...
+2025-11-26T14:43:16.580Z  INFO 1 --- [account-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-11-26T14:43:16.586Z  INFO 1 --- [account-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-11-26T14:43:16.619Z  INFO 1 --- [account-service] [main] v.d.a.AccountServiceApplication          : Started AccountServiceApplication in 94.444 seconds (process running for 101.52)
+2025-11-26T14:43:16.711Z  INFO 1 --- [account-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ACCOUNT-SERVICE/3c88d2b34e74:account-service:8081 - registration status: 204
+2025-11-26T14:43:29.384Z  INFO 1 --- [account-service] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26T14:43:29.387Z  INFO 1 --- [account-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-26T14:43:29.393Z  INFO 1 --- [account-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-11-26T14:43:29.863Z  INFO 1 --- [account-service] [http-nio-8081-exec-2] v.d.a.controller.AccountController       : Fetching list of accounts
+2025-11-26T14:43:29.869Z  INFO 1 --- [account-service] [http-nio-8081-exec-2] v.d.a.services.impl.AccountServiceImpl   : Retrieving all accounts from the database
+2025-11-26T14:44:17.047Z  INFO 1 --- [account-service] [http-nio-8081-exec-3] v.d.a.controller.AccountController       : Fetching list of accounts
+2025-11-26T14:44:17.053Z  INFO 1 --- [account-service] [http-nio-8081-exec-3] v.d.a.services.impl.AccountServiceImpl   : Retrieving all accounts from the database
+2025-11-26T14:48:10.997Z  INFO 1 --- [account-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
